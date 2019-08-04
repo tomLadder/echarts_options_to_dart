@@ -1,43 +1,120 @@
-
+import 'package:json_annotation/json_annotation.dart';
+part 'EChartsOption.g.dart';
+  
+        @JsonSerializable(nullable: true)
         class EChartsOption {
             // Properties
-            Title title;
-            Legend legend;
-            Grid grid;
-            XAxis xAxis;
-            YAxis yAxis;
-            Polar polar;
-            RadiusAxis radiusAxis;
-            AngleAxis angleAxis;
-            Radar radar;
-            String dataZoom;
-            String visualMap;
-            Tooltip tooltip;
-            AxisPointer axisPointer;
-            Toolbox toolbox;
-            Brush brush;
-            Geo geo;
-            Parallel parallel;
-            ParallelAxis parallelAxis;
-            SingleAxis singleAxis;
-            Timeline timeline;
-            String graphic;
-            Calendar calendar;
-            Dataset dataset;
-            String aria;
-            String series;
-            List<dynamic> color;
-            String backgroundColor;
-            TextStyle textStyle;
-            String animation;
-            int animationThreshold;
-            int animationDuration;
-            String animationEasing;
-            int animationDelay;
-            int animationDurationUpdate;
-            String animationEasingUpdate;
-            int animationDelayUpdate;
-            String useUTC;
+            
+        @JsonKey(includeIfNull: false)
+        Title title;
+            
+        @JsonKey(includeIfNull: false)
+        Legend legend;
+            
+        @JsonKey(includeIfNull: false)
+        Grid grid;
+            
+        @JsonKey(includeIfNull: false)
+        XAxis xAxis;
+            
+        @JsonKey(includeIfNull: false)
+        YAxis yAxis;
+            
+        @JsonKey(includeIfNull: false)
+        Polar polar;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxis radiusAxis;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxis angleAxis;
+            
+        @JsonKey(includeIfNull: false)
+        Radar radar;
+            
+        @JsonKey(includeIfNull: false)
+        String dataZoom;
+            
+        @JsonKey(includeIfNull: false)
+        String visualMap;
+            
+        @JsonKey(includeIfNull: false)
+        Tooltip tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        AxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        Toolbox toolbox;
+            
+        @JsonKey(includeIfNull: false)
+        Brush brush;
+            
+        @JsonKey(includeIfNull: false)
+        Geo geo;
+            
+        @JsonKey(includeIfNull: false)
+        Parallel parallel;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxis parallelAxis;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxis singleAxis;
+            
+        @JsonKey(includeIfNull: false)
+        Timeline timeline;
+            
+        @JsonKey(includeIfNull: false)
+        String graphic;
+            
+        @JsonKey(includeIfNull: false)
+        Calendar calendar;
+            
+        @JsonKey(includeIfNull: false)
+        Dataset dataset;
+            
+        @JsonKey(includeIfNull: false)
+        String aria;
+            
+        @JsonKey(includeIfNull: false)
+        String series;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        TextStyle textStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String animation;
+            
+        @JsonKey(includeIfNull: false)
+        int animationThreshold;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDuration;
+            
+        @JsonKey(includeIfNull: false)
+        String animationEasing;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDelay;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDurationUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        String animationEasingUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDelayUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        String useUTC;
         
 
             // Constructor
@@ -82,78 +159,100 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "title": title,
-              "legend": legend,
-              "grid": grid,
-              "xAxis": xAxis,
-              "yAxis": yAxis,
-              "polar": polar,
-              "radiusAxis": radiusAxis,
-              "angleAxis": angleAxis,
-              "radar": radar,
-              "dataZoom": dataZoom,
-              "visualMap": visualMap,
-              "tooltip": tooltip,
-              "axisPointer": axisPointer,
-              "toolbox": toolbox,
-              "brush": brush,
-              "geo": geo,
-              "parallel": parallel,
-              "parallelAxis": parallelAxis,
-              "singleAxis": singleAxis,
-              "timeline": timeline,
-              "graphic": graphic,
-              "calendar": calendar,
-              "dataset": dataset,
-              "aria": aria,
-              "series": series,
-              "color": color,
-              "backgroundColor": backgroundColor,
-              "textStyle": textStyle,
-              "animation": animation,
-              "animationThreshold": animationThreshold,
-              "animationDuration": animationDuration,
-              "animationEasing": animationEasing,
-              "animationDelay": animationDelay,
-              "animationDurationUpdate": animationDurationUpdate,
-              "animationEasingUpdate": animationEasingUpdate,
-              "animationDelayUpdate": animationDelayUpdate,
-              "useUTC": useUTC,
-             };
+           factory EChartsOption.fromJson(Map<String, dynamic> json) => _$EChartsOptionFromJson(json);
+            Map<String, dynamic> toJson() => _$EChartsOptionToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Title {
             // Properties
-            String id;
-            String show;
-            String text;
-            String link;
-            String target;
-            String textStyle;
-            String subtext;
-            String sublink;
-            String subtarget;
-            String subtextStyle;
-            String textAlign;
-            String textVerticalAlign;
-            String triggerEvent;
-            int padding;
-            int itemGap;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String text;
+            
+        @JsonKey(includeIfNull: false)
+        String link;
+            
+        @JsonKey(includeIfNull: false)
+        String target;
+            
+        @JsonKey(includeIfNull: false)
+        String textStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String subtext;
+            
+        @JsonKey(includeIfNull: false)
+        String sublink;
+            
+        @JsonKey(includeIfNull: false)
+        String subtarget;
+            
+        @JsonKey(includeIfNull: false)
+        String subtextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textVerticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        int itemGap;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -190,87 +289,151 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "text": text,
-              "link": link,
-              "target": target,
-              "textStyle": textStyle,
-              "subtext": subtext,
-              "sublink": sublink,
-              "subtarget": subtarget,
-              "subtextStyle": subtextStyle,
-              "textAlign": textAlign,
-              "textVerticalAlign": textVerticalAlign,
-              "triggerEvent": triggerEvent,
-              "padding": padding,
-              "itemGap": itemGap,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory Title.fromJson(Map<String, dynamic> json) => _$TitleFromJson(json);
+            Map<String, dynamic> toJson() => _$TitleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Legend {
             // Properties
-            String type;
-            String id;
-            String show;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String width;
-            String height;
-            String orient;
-            String align;
-            int padding;
-            int itemGap;
-            int itemWidth;
-            int itemHeight;
-            String symbolKeepAspect;
-            String formatter;
-            String selectedMode;
-            String inactiveColor;
-            String selected;
-            LegendTextStyle textStyle;
-            String tooltip;
-            String icon;
-            List<dynamic> data;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int scrollDataIndex;
-            int pageButtonItemGap;
-            int pageButtonGap;
-            String pageButtonPosition;
-            String pageFormatter;
-            LegendPageIcons pageIcons;
-            String pageIconColor;
-            String pageIconInactiveColor;
-            int pageIconSize;
-            LegendPageTextStyle pageTextStyle;
-            String animation;
-            int animationDurationUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String width;
+            
+        @JsonKey(includeIfNull: false)
+        String height;
+            
+        @JsonKey(includeIfNull: false)
+        String orient;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        int itemGap;
+            
+        @JsonKey(includeIfNull: false)
+        int itemWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int itemHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String symbolKeepAspect;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String selectedMode;
+            
+        @JsonKey(includeIfNull: false)
+        String inactiveColor;
+            
+        @JsonKey(includeIfNull: false)
+        String selected;
+            
+        @JsonKey(includeIfNull: false)
+        LegendTextStyle textStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int scrollDataIndex;
+            
+        @JsonKey(includeIfNull: false)
+        int pageButtonItemGap;
+            
+        @JsonKey(includeIfNull: false)
+        int pageButtonGap;
+            
+        @JsonKey(includeIfNull: false)
+        String pageButtonPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String pageFormatter;
+            
+        @JsonKey(includeIfNull: false)
+        LegendPageIcons pageIcons;
+            
+        @JsonKey(includeIfNull: false)
+        String pageIconColor;
+            
+        @JsonKey(includeIfNull: false)
+        String pageIconInactiveColor;
+            
+        @JsonKey(includeIfNull: false)
+        int pageIconSize;
+            
+        @JsonKey(includeIfNull: false)
+        LegendPageTextStyle pageTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String animation;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDurationUpdate;
         
 
             // Constructor
@@ -324,84 +487,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "type": type,
-              "id": id,
-              "show": show,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "orient": orient,
-              "align": align,
-              "padding": padding,
-              "itemGap": itemGap,
-              "itemWidth": itemWidth,
-              "itemHeight": itemHeight,
-              "symbolKeepAspect": symbolKeepAspect,
-              "formatter": formatter,
-              "selectedMode": selectedMode,
-              "inactiveColor": inactiveColor,
-              "selected": selected,
-              "textStyle": textStyle,
-              "tooltip": tooltip,
-              "icon": icon,
-              "data": data,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "scrollDataIndex": scrollDataIndex,
-              "pageButtonItemGap": pageButtonItemGap,
-              "pageButtonGap": pageButtonGap,
-              "pageButtonPosition": pageButtonPosition,
-              "pageFormatter": pageFormatter,
-              "pageIcons": pageIcons,
-              "pageIconColor": pageIconColor,
-              "pageIconInactiveColor": pageIconInactiveColor,
-              "pageIconSize": pageIconSize,
-              "pageTextStyle": pageTextStyle,
-              "animation": animation,
-              "animationDurationUpdate": animationDurationUpdate,
-             };
+           factory Legend.fromJson(Map<String, dynamic> json) => _$LegendFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class LegendTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            LegendTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        LegendTextStyleRich rich;
         
 
             // Constructor
@@ -435,39 +605,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory LegendTextStyle.fromJson(Map<String, dynamic> json) => _$LegendTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class LegendTextStyleRich {
             // Properties
-            LegendTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        LegendTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -476,38 +623,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory LegendTextStyleRich.fromJson(Map<String, dynamic> json) => _$LegendTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class LegendTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -540,39 +737,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory LegendTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$LegendTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class LegendPageIcons {
             // Properties
-            List<dynamic> horizontal;
-            List<dynamic> vertical;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> horizontal;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> vertical;
         
 
             // Constructor
@@ -582,28 +759,55 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "horizontal": horizontal,
-              "vertical": vertical,
-             };
+           factory LegendPageIcons.fromJson(Map<String, dynamic> json) => _$LegendPageIconsFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendPageIconsToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class LegendPageTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -625,45 +829,70 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory LegendPageTextStyle.fromJson(Map<String, dynamic> json) => _$LegendPageTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$LegendPageTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Grid {
             // Properties
-            String id;
-            String show;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String width;
-            String height;
-            String containLabel;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            String tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String width;
+            
+        @JsonKey(includeIfNull: false)
+        String height;
+            
+        @JsonKey(includeIfNull: false)
+        String containLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String tooltip;
         
 
             // Constructor
@@ -690,62 +919,106 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "containLabel": containLabel,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "tooltip": tooltip,
-             };
+           factory Grid.fromJson(Map<String, dynamic> json) => _$GridFromJson(json);
+            Map<String, dynamic> toJson() => _$GridToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxis {
             // Properties
-            String id;
-            String show;
-            int gridIndex;
-            String position;
-            int offset;
-            String type;
-            String name;
-            String nameLocation;
-            XAxisNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            XAxisAxisLine axisLine;
-            XAxisAxisTick axisTick;
-            XAxisAxisLabel axisLabel;
-            XAxisSplitLine splitLine;
-            XAxisSplitArea splitArea;
-            List<dynamic> data;
-            XAxisAxisPointer axisPointer;
-            int zlevel;
-            int z;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int gridIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        int offset;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
         
 
             // Constructor
@@ -784,69 +1057,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "gridIndex": gridIndex,
-              "position": position,
-              "offset": offset,
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "data": data,
-              "axisPointer": axisPointer,
-              "zlevel": zlevel,
-              "z": z,
-             };
+           factory XAxis.fromJson(Map<String, dynamic> json) => _$XAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            XAxisNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisNameTextStyleRich rich;
         
 
             // Constructor
@@ -880,39 +1175,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory XAxisNameTextStyle.fromJson(Map<String, dynamic> json) => _$XAxisNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisNameTextStyleRich {
             // Properties
-            XAxisNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -921,38 +1193,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory XAxisNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$XAxisNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -985,44 +1307,34 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory XAxisNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$XAxisNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisLine {
             // Properties
-            String show;
-            String onZero;
-            int onZeroAxisIndex;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            XAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String onZero;
+            
+        @JsonKey(includeIfNull: false)
+        int onZeroAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -1037,27 +1349,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "onZero": onZero,
-              "onZeroAxisIndex": onZeroAxisIndex,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory XAxisAxisLine.fromJson(Map<String, dynamic> json) => _$XAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1073,26 +1395,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$XAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            XAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -1106,26 +1433,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory XAxisAxisTick.fromJson(Map<String, dynamic> json) => _$XAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1141,54 +1479,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$XAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            XAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -1230,47 +1629,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory XAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$XAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisLabelRich {
             // Properties
-            XAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -1279,38 +1647,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory XAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$XAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -1343,40 +1761,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory XAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$XAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisSplitLine {
             // Properties
-            String show;
-            int interval;
-            XAxisSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -1387,23 +1787,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "lineStyle": lineStyle,
-             };
+           factory XAxisSplitLine.fromJson(Map<String, dynamic> json) => _$XAxisSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisSplitLineLineStyle {
             // Properties
-            List<dynamic> color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1419,23 +1833,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$XAxisSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisSplitArea {
             // Properties
-            int interval;
-            String show;
-            XAxisSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -1446,21 +1859,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "interval": interval,
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory XAxisSplitArea.fromJson(Map<String, dynamic> json) => _$XAxisSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1474,29 +1897,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$XAxisSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisPointer {
             // Properties
-            String show;
-            String type;
-            String snap;
-            int z;
-            XAxisAxisPointerLabel label;
-            XAxisAxisPointerLineStyle lineStyle;
-            XAxisAxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            XAxisAxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        XAxisAxisPointerHandle handle;
         
 
             // Constructor
@@ -1515,49 +1955,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-             };
+           factory XAxisAxisPointer.fromJson(Map<String, dynamic> json) => _$XAxisAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -1591,46 +2073,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory XAxisAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$XAxisAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1646,26 +2119,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$XAxisAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -1679,28 +2157,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory XAxisAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$XAxisAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class XAxisAxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -1718,53 +2211,106 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory XAxisAxisPointerHandle.fromJson(Map<String, dynamic> json) => _$XAxisAxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$XAxisAxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxis {
             // Properties
-            String id;
-            String show;
-            int gridIndex;
-            String position;
-            int offset;
-            String type;
-            String name;
-            String nameLocation;
-            YAxisNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            YAxisAxisLine axisLine;
-            YAxisAxisTick axisTick;
-            YAxisAxisLabel axisLabel;
-            YAxisSplitLine splitLine;
-            YAxisSplitArea splitArea;
-            List<dynamic> data;
-            YAxisAxisPointer axisPointer;
-            int zlevel;
-            int z;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int gridIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        int offset;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
         
 
             // Constructor
@@ -1803,69 +2349,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "gridIndex": gridIndex,
-              "position": position,
-              "offset": offset,
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "data": data,
-              "axisPointer": axisPointer,
-              "zlevel": zlevel,
-              "z": z,
-             };
+           factory YAxis.fromJson(Map<String, dynamic> json) => _$YAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            YAxisNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisNameTextStyleRich rich;
         
 
             // Constructor
@@ -1899,39 +2467,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory YAxisNameTextStyle.fromJson(Map<String, dynamic> json) => _$YAxisNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisNameTextStyleRich {
             // Properties
-            YAxisNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -1940,38 +2485,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory YAxisNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$YAxisNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -2004,44 +2599,34 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory YAxisNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$YAxisNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisLine {
             // Properties
-            String show;
-            String onZero;
-            int onZeroAxisIndex;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            YAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String onZero;
+            
+        @JsonKey(includeIfNull: false)
+        int onZeroAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -2056,27 +2641,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "onZero": onZero,
-              "onZeroAxisIndex": onZeroAxisIndex,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory YAxisAxisLine.fromJson(Map<String, dynamic> json) => _$YAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2092,26 +2687,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$YAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            YAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -2125,26 +2725,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory YAxisAxisTick.fromJson(Map<String, dynamic> json) => _$YAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2160,54 +2771,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$YAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            YAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -2249,47 +2921,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory YAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$YAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisLabelRich {
             // Properties
-            YAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -2298,38 +2939,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory YAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$YAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -2362,40 +3053,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory YAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$YAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisSplitLine {
             // Properties
-            String show;
-            int interval;
-            YAxisSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -2406,23 +3079,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "lineStyle": lineStyle,
-             };
+           factory YAxisSplitLine.fromJson(Map<String, dynamic> json) => _$YAxisSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisSplitLineLineStyle {
             // Properties
-            List<dynamic> color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2438,23 +3125,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$YAxisSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisSplitArea {
             // Properties
-            int interval;
-            String show;
-            YAxisSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -2465,21 +3151,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "interval": interval,
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory YAxisSplitArea.fromJson(Map<String, dynamic> json) => _$YAxisSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2493,29 +3189,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$YAxisSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisPointer {
             // Properties
-            String show;
-            String type;
-            String snap;
-            int z;
-            YAxisAxisPointerLabel label;
-            YAxisAxisPointerLineStyle lineStyle;
-            YAxisAxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            YAxisAxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        YAxisAxisPointerHandle handle;
         
 
             // Constructor
@@ -2534,49 +3247,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-             };
+           factory YAxisAxisPointer.fromJson(Map<String, dynamic> json) => _$YAxisAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -2610,46 +3365,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory YAxisAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$YAxisAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2665,26 +3411,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$YAxisAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -2698,28 +3449,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory YAxisAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$YAxisAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class YAxisAxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -2737,28 +3503,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory YAxisAxisPointerHandle.fromJson(Map<String, dynamic> json) => _$YAxisAxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$YAxisAxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Polar {
             // Properties
-            String id;
-            int zlevel;
-            int z;
-            List<dynamic> center;
-            int radius;
-            String tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> center;
+            
+        @JsonKey(includeIfNull: false)
+        int radius;
+            
+        @JsonKey(includeIfNull: false)
+        String tooltip;
         
 
             // Constructor
@@ -2772,46 +3541,97 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "zlevel": zlevel,
-              "z": z,
-              "center": center,
-              "radius": radius,
-              "tooltip": tooltip,
-             };
+           factory Polar.fromJson(Map<String, dynamic> json) => _$PolarFromJson(json);
+            Map<String, dynamic> toJson() => _$PolarToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxis {
             // Properties
-            String id;
-            int polarIndex;
-            String type;
-            String name;
-            String nameLocation;
-            RadiusAxisNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            RadiusAxisAxisLine axisLine;
-            RadiusAxisAxisTick axisTick;
-            RadiusAxisAxisLabel axisLabel;
-            RadiusAxisSplitLine splitLine;
-            RadiusAxisSplitArea splitArea;
-            List<dynamic> data;
-            RadiusAxisAxisPointer axisPointer;
-            int zlevel;
-            int z;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int polarIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
         
 
             // Constructor
@@ -2847,66 +3667,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "polarIndex": polarIndex,
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "data": data,
-              "axisPointer": axisPointer,
-              "zlevel": zlevel,
-              "z": z,
-             };
+           factory RadiusAxis.fromJson(Map<String, dynamic> json) => _$RadiusAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            RadiusAxisNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisNameTextStyleRich rich;
         
 
             // Constructor
@@ -2940,39 +3785,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory RadiusAxisNameTextStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisNameTextStyleRich {
             // Properties
-            RadiusAxisNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -2981,38 +3803,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory RadiusAxisNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$RadiusAxisNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -3045,42 +3917,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory RadiusAxisNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            RadiusAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -3093,25 +3951,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory RadiusAxisAxisLine.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3127,26 +3997,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            RadiusAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -3160,26 +4035,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory RadiusAxisAxisTick.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3195,54 +4081,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            RadiusAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -3284,47 +4231,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory RadiusAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisLabelRich {
             // Properties
-            RadiusAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -3333,38 +4249,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory RadiusAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -3397,40 +4363,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory RadiusAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisSplitLine {
             // Properties
-            String show;
-            int interval;
-            RadiusAxisSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -3441,23 +4389,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "lineStyle": lineStyle,
-             };
+           factory RadiusAxisSplitLine.fromJson(Map<String, dynamic> json) => _$RadiusAxisSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisSplitLineLineStyle {
             // Properties
-            List<dynamic> color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3473,23 +4435,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisSplitArea {
             // Properties
-            int interval;
-            String show;
-            RadiusAxisSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -3500,21 +4461,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "interval": interval,
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory RadiusAxisSplitArea.fromJson(Map<String, dynamic> json) => _$RadiusAxisSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3528,29 +4499,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisPointer {
             // Properties
-            String show;
-            String type;
-            String snap;
-            int z;
-            RadiusAxisAxisPointerLabel label;
-            RadiusAxisAxisPointerLineStyle lineStyle;
-            RadiusAxisAxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            RadiusAxisAxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        RadiusAxisAxisPointerHandle handle;
         
 
             // Constructor
@@ -3569,49 +4557,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-             };
+           factory RadiusAxisAxisPointer.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -3645,46 +4675,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory RadiusAxisAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3700,26 +4721,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3733,28 +4759,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadiusAxisAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadiusAxisAxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -3772,46 +4813,85 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory RadiusAxisAxisPointerHandle.fromJson(Map<String, dynamic> json) => _$RadiusAxisAxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadiusAxisAxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxis {
             // Properties
-            String id;
-            int polarIndex;
-            int startAngle;
-            String clockwise;
-            String type;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            AngleAxisAxisLine axisLine;
-            AngleAxisAxisTick axisTick;
-            AngleAxisAxisLabel axisLabel;
-            AngleAxisSplitLine splitLine;
-            AngleAxisSplitArea splitArea;
-            List<dynamic> data;
-            AngleAxisAxisPointer axisPointer;
-            int zlevel;
-            int z;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int polarIndex;
+            
+        @JsonKey(includeIfNull: false)
+        int startAngle;
+            
+        @JsonKey(includeIfNull: false)
+        String clockwise;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
         
 
             // Constructor
@@ -3843,41 +4923,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "polarIndex": polarIndex,
-              "startAngle": startAngle,
-              "clockwise": clockwise,
-              "type": type,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "data": data,
-              "axisPointer": axisPointer,
-              "zlevel": zlevel,
-              "z": z,
-             };
+           factory AngleAxis.fromJson(Map<String, dynamic> json) => _$AngleAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            AngleAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -3890,25 +4957,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory AngleAxisAxisLine.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3924,26 +5003,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            AngleAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -3957,26 +5041,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory AngleAxisAxisTick.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -3992,53 +5087,112 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            AngleAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -4079,46 +5233,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory AngleAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisLabelRich {
             // Properties
-            AngleAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -4127,38 +5251,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory AngleAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -4191,40 +5365,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory AngleAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisSplitLine {
             // Properties
-            String show;
-            int interval;
-            AngleAxisSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -4235,23 +5391,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "lineStyle": lineStyle,
-             };
+           factory AngleAxisSplitLine.fromJson(Map<String, dynamic> json) => _$AngleAxisSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisSplitLineLineStyle {
             // Properties
-            List<dynamic> color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4267,23 +5437,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisSplitArea {
             // Properties
-            int interval;
-            String show;
-            AngleAxisSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -4294,21 +5463,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "interval": interval,
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory AngleAxisSplitArea.fromJson(Map<String, dynamic> json) => _$AngleAxisSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4322,29 +5501,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisPointer {
             // Properties
-            String show;
-            String type;
-            String snap;
-            int z;
-            AngleAxisAxisPointerLabel label;
-            AngleAxisAxisPointerLineStyle lineStyle;
-            AngleAxisAxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            AngleAxisAxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        AngleAxisAxisPointerHandle handle;
         
 
             // Constructor
@@ -4363,49 +5559,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-             };
+           factory AngleAxisAxisPointer.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -4439,46 +5677,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory AngleAxisAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4494,26 +5723,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4527,28 +5761,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AngleAxisAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AngleAxisAxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -4566,42 +5815,73 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory AngleAxisAxisPointerHandle.fromJson(Map<String, dynamic> json) => _$AngleAxisAxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$AngleAxisAxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Radar {
             // Properties
-            String id;
-            int zlevel;
-            int z;
-            List<dynamic> center;
-            int radius;
-            int startAngle;
-            RadarName name;
-            int nameGap;
-            int splitNumber;
-            String shape;
-            String scale;
-            String silent;
-            String triggerEvent;
-            RadarAxisLine axisLine;
-            RadarAxisTick axisTick;
-            RadarAxisLabel axisLabel;
-            RadarSplitLine splitLine;
-            RadarSplitArea splitArea;
-            List<dynamic> indicator;
-            String color;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> center;
+            
+        @JsonKey(includeIfNull: false)
+        int radius;
+            
+        @JsonKey(includeIfNull: false)
+        int startAngle;
+            
+        @JsonKey(includeIfNull: false)
+        RadarName name;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        String shape;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        RadarSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        RadarSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> indicator;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
         
 
             // Constructor
@@ -4629,58 +5909,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "zlevel": zlevel,
-              "z": z,
-              "center": center,
-              "radius": radius,
-              "startAngle": startAngle,
-              "name": name,
-              "nameGap": nameGap,
-              "splitNumber": splitNumber,
-              "shape": shape,
-              "scale": scale,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "indicator": indicator,
-              "color": color,
-             };
+           factory Radar.fromJson(Map<String, dynamic> json) => _$RadarFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarName {
             // Properties
-            String show;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            RadarNameRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        RadarNameRich rich;
         
 
             // Constructor
@@ -4714,39 +6027,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory RadarName.fromJson(Map<String, dynamic> json) => _$RadarNameFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarNameToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarNameRich {
             // Properties
-            RadarNameRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        RadarNameRichCustomStyle customStyle;
         
 
             // Constructor
@@ -4755,38 +6045,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory RadarNameRich.fromJson(Map<String, dynamic> json) => _$RadarNameRichFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarNameRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarNameRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -4819,42 +6159,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory RadarNameRichCustomStyle.fromJson(Map<String, dynamic> json) => _$RadarNameRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarNameRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            RadarAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -4867,25 +6193,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory RadarAxisLine.fromJson(Map<String, dynamic> json) => _$RadarAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4901,23 +6239,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadarAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$RadarAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisTick {
             // Properties
-            String show;
-            int length;
-            RadarAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -4928,23 +6265,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory RadarAxisTick.fromJson(Map<String, dynamic> json) => _$RadarAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -4960,52 +6311,109 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadarAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$RadarAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisLabel {
             // Properties
-            String show;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            RadarAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisLabelRich rich;
         
 
             // Constructor
@@ -5045,45 +6453,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory RadarAxisLabel.fromJson(Map<String, dynamic> json) => _$RadarAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisLabelRich {
             // Properties
-            RadarAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        RadarAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -5092,38 +6471,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory RadarAxisLabelRich.fromJson(Map<String, dynamic> json) => _$RadarAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -5156,38 +6585,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory RadarAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$RadarAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarSplitLine {
             // Properties
-            String show;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
         
 
             // Constructor
@@ -5196,15 +6603,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-             };
+           factory RadarSplitLine.fromJson(Map<String, dynamic> json) => _$RadarSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarSplitArea {
             // Properties
-            String show;
-            RadarSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        RadarSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -5214,20 +6625,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory RadarSplitArea.fromJson(Map<String, dynamic> json) => _$RadarSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class RadarSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5241,38 +6663,73 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory RadarSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$RadarSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$RadarSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Tooltip {
             // Properties
-            String show;
-            String trigger;
-            TooltipAxisPointer axisPointer;
-            String showContent;
-            String alwaysShowContent;
-            String triggerOn;
-            int showDelay;
-            int hideDelay;
-            String enterable;
-            String renderMode;
-            String confine;
-            int transitionDuration;
-            String position;
-            String formatter;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int padding;
-            TooltipTextStyle textStyle;
-            String extraCssText;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String trigger;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        String showContent;
+            
+        @JsonKey(includeIfNull: false)
+        String alwaysShowContent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerOn;
+            
+        @JsonKey(includeIfNull: false)
+        int showDelay;
+            
+        @JsonKey(includeIfNull: false)
+        int hideDelay;
+            
+        @JsonKey(includeIfNull: false)
+        String enterable;
+            
+        @JsonKey(includeIfNull: false)
+        String renderMode;
+            
+        @JsonKey(includeIfNull: false)
+        String confine;
+            
+        @JsonKey(includeIfNull: false)
+        int transitionDuration;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipTextStyle textStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String extraCssText;
         
 
             // Constructor
@@ -5300,48 +6757,61 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "trigger": trigger,
-              "axisPointer": axisPointer,
-              "showContent": showContent,
-              "alwaysShowContent": alwaysShowContent,
-              "triggerOn": triggerOn,
-              "showDelay": showDelay,
-              "hideDelay": hideDelay,
-              "enterable": enterable,
-              "renderMode": renderMode,
-              "confine": confine,
-              "transitionDuration": transitionDuration,
-              "position": position,
-              "formatter": formatter,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "padding": padding,
-              "textStyle": textStyle,
-              "extraCssText": extraCssText,
-             };
+           factory Tooltip.fromJson(Map<String, dynamic> json) => _$TooltipFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipAxisPointer {
             // Properties
-            String type;
-            String axis;
-            String snap;
-            int z;
-            TooltipAxisPointerLabel label;
-            TooltipAxisPointerLineStyle lineStyle;
-            TooltipAxisPointerShadowStyle shadowStyle;
-            TooltipAxisPointerCrossStyle crossStyle;
-            String animation;
-            int animationThreshold;
-            int animationDuration;
-            String animationEasing;
-            int animationDelay;
-            int animationDurationUpdate;
-            String animationEasingUpdate;
-            int animationDelayUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String axis;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TooltipAxisPointerCrossStyle crossStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String animation;
+            
+        @JsonKey(includeIfNull: false)
+        int animationThreshold;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDuration;
+            
+        @JsonKey(includeIfNull: false)
+        String animationEasing;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDelay;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDurationUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        String animationEasingUpdate;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDelayUpdate;
         
 
             // Constructor
@@ -5365,54 +6835,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "type": type,
-              "axis": axis,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "crossStyle": crossStyle,
-              "animation": animation,
-              "animationThreshold": animationThreshold,
-              "animationDuration": animationDuration,
-              "animationEasing": animationEasing,
-              "animationDelay": animationDelay,
-              "animationDurationUpdate": animationDurationUpdate,
-              "animationEasingUpdate": animationEasingUpdate,
-              "animationDelayUpdate": animationDelayUpdate,
-             };
+           factory TooltipAxisPointer.fromJson(Map<String, dynamic> json) => _$TooltipAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -5446,46 +6953,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory TooltipAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$TooltipAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5501,26 +6999,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory TooltipAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$TooltipAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5534,26 +7037,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory TooltipAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$TooltipAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipAxisPointerCrossStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5569,34 +7083,55 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory TooltipAxisPointerCrossStyle.fromJson(Map<String, dynamic> json) => _$TooltipAxisPointerCrossStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipAxisPointerCrossStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TooltipTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -5618,40 +7153,55 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory TooltipTextStyle.fromJson(Map<String, dynamic> json) => _$TooltipTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TooltipTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AxisPointer {
             // Properties
-            String id;
-            String show;
-            String type;
-            String snap;
-            int z;
-            AxisPointerLabel label;
-            AxisPointerLineStyle lineStyle;
-            AxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            AxisPointerHandle handle;
-            List<dynamic> link;
-            String triggerOn;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        AxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        AxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        AxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        AxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> link;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerOn;
         
 
             // Constructor
@@ -5673,52 +7223,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-              "link": link,
-              "triggerOn": triggerOn,
-             };
+           factory AxisPointer.fromJson(Map<String, dynamic> json) => _$AxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$AxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -5752,46 +7341,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory AxisPointerLabel.fromJson(Map<String, dynamic> json) => _$AxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$AxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5807,26 +7387,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$AxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -5840,28 +7425,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory AxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$AxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$AxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class AxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -5879,40 +7479,67 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory AxisPointerHandle.fromJson(Map<String, dynamic> json) => _$AxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$AxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Toolbox {
             // Properties
-            String id;
-            String show;
-            String orient;
-            int itemSize;
-            int itemGap;
-            String showTitle;
-            ToolboxFeature feature;
-            ToolboxIconStyle iconStyle;
-            ToolboxEmphasis emphasis;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String width;
-            String height;
-            String tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String orient;
+            
+        @JsonKey(includeIfNull: false)
+        int itemSize;
+            
+        @JsonKey(includeIfNull: false)
+        int itemGap;
+            
+        @JsonKey(includeIfNull: false)
+        String showTitle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeature feature;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String width;
+            
+        @JsonKey(includeIfNull: false)
+        String height;
+            
+        @JsonKey(includeIfNull: false)
+        String tooltip;
         
 
             // Constructor
@@ -5938,36 +7565,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "orient": orient,
-              "itemSize": itemSize,
-              "itemGap": itemGap,
-              "showTitle": showTitle,
-              "feature": feature,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "tooltip": tooltip,
-             };
+           factory Toolbox.fromJson(Map<String, dynamic> json) => _$ToolboxFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeature {
             // Properties
-            ToolboxFeatureSaveAsImage saveAsImage;
-            ToolboxFeatureRestore restore;
-            ToolboxFeatureDataView dataView;
-            ToolboxFeatureDataZoom dataZoom;
-            ToolboxFeatureMagicType magicType;
-            ToolboxFeatureBrush brush;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureSaveAsImage saveAsImage;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureRestore restore;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataView dataView;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoom dataZoom;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicType magicType;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureBrush brush;
         
 
             // Constructor
@@ -5981,29 +7603,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "saveAsImage": saveAsImage,
-              "restore": restore,
-              "dataView": dataView,
-              "dataZoom": dataZoom,
-              "magicType": magicType,
-              "brush": brush,
-             };
+           factory ToolboxFeature.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureSaveAsImage {
             // Properties
-            String type;
-            String name;
-            String backgroundColor;
-            String connectedBackgroundColor;
-            List<dynamic> excludeComponents;
-            String show;
-            String title;
-            String icon;
-            ToolboxFeatureSaveAsImageIconStyle iconStyle;
-            ToolboxFeatureSaveAsImageEmphasis emphasis;
-            int pixelRatio;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String connectedBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> excludeComponents;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String title;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureSaveAsImageIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureSaveAsImageEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        int pixelRatio;
         
 
             // Constructor
@@ -6022,32 +7661,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "type": type,
-              "name": name,
-              "backgroundColor": backgroundColor,
-              "connectedBackgroundColor": connectedBackgroundColor,
-              "excludeComponents": excludeComponents,
-              "show": show,
-              "title": title,
-              "icon": icon,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-              "pixelRatio": pixelRatio,
-             };
+           factory ToolboxFeatureSaveAsImage.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureSaveAsImageFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureSaveAsImageToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureSaveAsImageIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -6064,22 +7711,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxFeatureSaveAsImageIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureSaveAsImageIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureSaveAsImageIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureSaveAsImageEmphasis {
             // Properties
-            ToolboxFeatureSaveAsImageEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureSaveAsImageEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -6088,28 +7729,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxFeatureSaveAsImageEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureSaveAsImageEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureSaveAsImageEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureSaveAsImageEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -6132,32 +7803,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxFeatureSaveAsImageEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureSaveAsImageEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureSaveAsImageEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureRestore {
             // Properties
-            String show;
-            String title;
-            String icon;
-            ToolboxFeatureRestoreIconStyle iconStyle;
-            ToolboxFeatureRestoreEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String title;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureRestoreIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureRestoreEmphasis emphasis;
         
 
             // Constructor
@@ -6170,26 +7837,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "title": title,
-              "icon": icon,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-             };
+           factory ToolboxFeatureRestore.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureRestoreFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureRestoreToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureRestoreIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -6206,22 +7887,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxFeatureRestoreIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureRestoreIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureRestoreIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureRestoreEmphasis {
             // Properties
-            ToolboxFeatureRestoreEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureRestoreEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -6230,28 +7905,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxFeatureRestoreEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureRestoreEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureRestoreEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureRestoreEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -6274,42 +7979,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxFeatureRestoreEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureRestoreEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureRestoreEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataView {
             // Properties
-            String show;
-            String title;
-            String icon;
-            ToolboxFeatureDataViewIconStyle iconStyle;
-            ToolboxFeatureDataViewEmphasis emphasis;
-            String readOnly;
-            String optionToContent;
-            String contentToOption;
-            List<dynamic> lang;
-            String backgroundColor;
-            String textareaColor;
-            String textareaBorderColor;
-            String textColor;
-            String buttonColor;
-            String buttonTextColor;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String title;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataViewIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataViewEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String readOnly;
+            
+        @JsonKey(includeIfNull: false)
+        String optionToContent;
+            
+        @JsonKey(includeIfNull: false)
+        String contentToOption;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> lang;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String textareaColor;
+            
+        @JsonKey(includeIfNull: false)
+        String textareaBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String textColor;
+            
+        @JsonKey(includeIfNull: false)
+        String buttonColor;
+            
+        @JsonKey(includeIfNull: false)
+        String buttonTextColor;
         
 
             // Constructor
@@ -6332,36 +8053,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "title": title,
-              "icon": icon,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-              "readOnly": readOnly,
-              "optionToContent": optionToContent,
-              "contentToOption": contentToOption,
-              "lang": lang,
-              "backgroundColor": backgroundColor,
-              "textareaColor": textareaColor,
-              "textareaBorderColor": textareaBorderColor,
-              "textColor": textColor,
-              "buttonColor": buttonColor,
-              "buttonTextColor": buttonTextColor,
-             };
+           factory ToolboxFeatureDataView.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataViewFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataViewToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataViewIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -6378,22 +8103,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxFeatureDataViewIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataViewIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataViewIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataViewEmphasis {
             // Properties
-            ToolboxFeatureDataViewEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataViewEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -6402,28 +8121,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxFeatureDataViewEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataViewEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataViewEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataViewEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -6446,34 +8195,34 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxFeatureDataViewEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataViewEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataViewEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoom {
             // Properties
-            String show;
-            ToolboxFeatureDataZoomTitle title;
-            ToolboxFeatureDataZoomIcon icon;
-            ToolboxFeatureDataZoomIconStyle iconStyle;
-            ToolboxFeatureDataZoomEmphasis emphasis;
-            int xAxisIndex;
-            int yAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoomTitle title;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoomIcon icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoomIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoomEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        int xAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        int yAxisIndex;
         
 
             // Constructor
@@ -6488,21 +8237,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "title": title,
-              "icon": icon,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-              "xAxisIndex": xAxisIndex,
-              "yAxisIndex": yAxisIndex,
-             };
+           factory ToolboxFeatureDataZoom.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoomTitle {
             // Properties
-            String zoom;
-            String back;
+            
+        @JsonKey(includeIfNull: false)
+        String zoom;
+            
+        @JsonKey(includeIfNull: false)
+        String back;
         
 
             // Constructor
@@ -6512,16 +8259,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "zoom": zoom,
-              "back": back,
-             };
+           factory ToolboxFeatureDataZoomTitle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomTitleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomTitleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoomIcon {
             // Properties
-            String zoom;
-            String back;
+            
+        @JsonKey(includeIfNull: false)
+        String zoom;
+            
+        @JsonKey(includeIfNull: false)
+        String back;
         
 
             // Constructor
@@ -6531,23 +8281,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "zoom": zoom,
-              "back": back,
-             };
+           factory ToolboxFeatureDataZoomIcon.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomIconFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomIconToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoomIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -6564,22 +8331,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxFeatureDataZoomIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoomEmphasis {
             // Properties
-            ToolboxFeatureDataZoomEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureDataZoomEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -6588,28 +8349,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxFeatureDataZoomEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureDataZoomEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -6632,35 +8423,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxFeatureDataZoomEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureDataZoomEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureDataZoomEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicType {
             // Properties
-            String show;
-            List<dynamic> type;
-            ToolboxFeatureMagicTypeTitle title;
-            ToolboxFeatureMagicTypeIcon icon;
-            ToolboxFeatureMagicTypeIconStyle iconStyle;
-            ToolboxFeatureMagicTypeEmphasis emphasis;
-            ToolboxFeatureMagicTypeOption option;
-            ToolboxFeatureMagicTypeSeriesIndex seriesIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> type;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeTitle title;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeIcon icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeOption option;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeSeriesIndex seriesIndex;
         
 
             // Constructor
@@ -6676,24 +8469,25 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "title": title,
-              "icon": icon,
-              "iconStyle": iconStyle,
-              "emphasis": emphasis,
-              "option": option,
-              "seriesIndex": seriesIndex,
-             };
+           factory ToolboxFeatureMagicType.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeTitle {
             // Properties
-            String line;
-            String bar;
-            String stack;
-            String tiled;
+            
+        @JsonKey(includeIfNull: false)
+        String line;
+            
+        @JsonKey(includeIfNull: false)
+        String bar;
+            
+        @JsonKey(includeIfNull: false)
+        String stack;
+            
+        @JsonKey(includeIfNull: false)
+        String tiled;
         
 
             // Constructor
@@ -6705,20 +8499,25 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "line": line,
-              "bar": bar,
-              "stack": stack,
-              "tiled": tiled,
-             };
+           factory ToolboxFeatureMagicTypeTitle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeTitleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeTitleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeIcon {
             // Properties
-            String line;
-            String bar;
-            String stack;
-            String tiled;
+            
+        @JsonKey(includeIfNull: false)
+        String line;
+            
+        @JsonKey(includeIfNull: false)
+        String bar;
+            
+        @JsonKey(includeIfNull: false)
+        String stack;
+            
+        @JsonKey(includeIfNull: false)
+        String tiled;
         
 
             // Constructor
@@ -6730,25 +8529,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "line": line,
-              "bar": bar,
-              "stack": stack,
-              "tiled": tiled,
-             };
+           factory ToolboxFeatureMagicTypeIcon.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeIconFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeIconToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -6765,22 +8579,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxFeatureMagicTypeIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeEmphasis {
             // Properties
-            ToolboxFeatureMagicTypeEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureMagicTypeEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -6789,28 +8597,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxFeatureMagicTypeEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -6833,31 +8671,25 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxFeatureMagicTypeEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeOption {
             // Properties
-            String line;
-            String bar;
-            String stack;
-            String tiled;
+            
+        @JsonKey(includeIfNull: false)
+        String line;
+            
+        @JsonKey(includeIfNull: false)
+        String bar;
+            
+        @JsonKey(includeIfNull: false)
+        String stack;
+            
+        @JsonKey(includeIfNull: false)
+        String tiled;
         
 
             // Constructor
@@ -6869,20 +8701,25 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "line": line,
-              "bar": bar,
-              "stack": stack,
-              "tiled": tiled,
-             };
+           factory ToolboxFeatureMagicTypeOption.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeOptionFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeOptionToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureMagicTypeSeriesIndex {
             // Properties
-            List<dynamic> line;
-            List<dynamic> bar;
-            List<dynamic> stack;
-            List<dynamic> tiled;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> line;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> bar;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> stack;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> tiled;
         
 
             // Constructor
@@ -6894,19 +8731,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "line": line,
-              "bar": bar,
-              "stack": stack,
-              "tiled": tiled,
-             };
+           factory ToolboxFeatureMagicTypeSeriesIndex.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureMagicTypeSeriesIndexFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureMagicTypeSeriesIndexToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureBrush {
             // Properties
-            List<dynamic> type;
-            ToolboxFeatureBrushIcon icon;
-            ToolboxFeatureBrushTitle title;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> type;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureBrushIcon icon;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxFeatureBrushTitle title;
         
 
             // Constructor
@@ -6917,21 +8757,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "type": type,
-              "icon": icon,
-              "title": title,
-             };
+           factory ToolboxFeatureBrush.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureBrushFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureBrushToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureBrushIcon {
             // Properties
-            String rect;
-            String polygon;
-            String lineX;
-            String lineY;
-            String keep;
-            String clear;
+            
+        @JsonKey(includeIfNull: false)
+        String rect;
+            
+        @JsonKey(includeIfNull: false)
+        String polygon;
+            
+        @JsonKey(includeIfNull: false)
+        String lineX;
+            
+        @JsonKey(includeIfNull: false)
+        String lineY;
+            
+        @JsonKey(includeIfNull: false)
+        String keep;
+            
+        @JsonKey(includeIfNull: false)
+        String clear;
         
 
             // Constructor
@@ -6945,24 +8795,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "rect": rect,
-              "polygon": polygon,
-              "lineX": lineX,
-              "lineY": lineY,
-              "keep": keep,
-              "clear": clear,
-             };
+           factory ToolboxFeatureBrushIcon.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureBrushIconFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureBrushIconToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxFeatureBrushTitle {
             // Properties
-            String rect;
-            String polygon;
-            String lineX;
-            String lineY;
-            String keep;
-            String clear;
+            
+        @JsonKey(includeIfNull: false)
+        String rect;
+            
+        @JsonKey(includeIfNull: false)
+        String polygon;
+            
+        @JsonKey(includeIfNull: false)
+        String lineX;
+            
+        @JsonKey(includeIfNull: false)
+        String lineY;
+            
+        @JsonKey(includeIfNull: false)
+        String keep;
+            
+        @JsonKey(includeIfNull: false)
+        String clear;
         
 
             // Constructor
@@ -6976,27 +8833,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "rect": rect,
-              "polygon": polygon,
-              "lineX": lineX,
-              "lineY": lineY,
-              "keep": keep,
-              "clear": clear,
-             };
+           factory ToolboxFeatureBrushTitle.fromJson(Map<String, dynamic> json) => _$ToolboxFeatureBrushTitleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxFeatureBrushTitleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -7013,22 +8883,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ToolboxIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxEmphasis {
             // Properties
-            ToolboxEmphasisIconStyle iconStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ToolboxEmphasisIconStyle iconStyle;
         
 
             // Constructor
@@ -7037,28 +8901,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "iconStyle": iconStyle,
-             };
+           factory ToolboxEmphasis.fromJson(Map<String, dynamic> json) => _$ToolboxEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ToolboxEmphasisIconStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            String textPosition;
-            String textFill;
-            String textAlign;
-            String textBackgroundColor;
-            int textBorderRadius;
-            int textPadding;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String textPosition;
+            
+        @JsonKey(includeIfNull: false)
+        String textFill;
+            
+        @JsonKey(includeIfNull: false)
+        String textAlign;
+            
+        @JsonKey(includeIfNull: false)
+        String textBackgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int textPadding;
         
 
             // Constructor
@@ -7081,44 +8975,64 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "textPosition": textPosition,
-              "textFill": textFill,
-              "textAlign": textAlign,
-              "textBackgroundColor": textBackgroundColor,
-              "textBorderRadius": textBorderRadius,
-              "textPadding": textPadding,
-             };
+           factory ToolboxEmphasisIconStyle.fromJson(Map<String, dynamic> json) => _$ToolboxEmphasisIconStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ToolboxEmphasisIconStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Brush {
             // Properties
-            String id;
-            List<dynamic> toolbox;
-            List<dynamic> brushLink;
-            List<dynamic> seriesIndex;
-            List<dynamic> geoIndex;
-            List<dynamic> xAxisIndex;
-            List<dynamic> yAxisIndex;
-            String brushType;
-            String brushMode;
-            String transformable;
-            String brushStyle;
-            String throttleType;
-            int throttleDelay;
-            int removeOnClick;
-            String inBrush;
-            String outOfBrush;
-            int z;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> toolbox;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> brushLink;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> seriesIndex;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> geoIndex;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> xAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> yAxisIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String brushType;
+            
+        @JsonKey(includeIfNull: false)
+        String brushMode;
+            
+        @JsonKey(includeIfNull: false)
+        String transformable;
+            
+        @JsonKey(includeIfNull: false)
+        String brushStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String throttleType;
+            
+        @JsonKey(includeIfNull: false)
+        int throttleDelay;
+            
+        @JsonKey(includeIfNull: false)
+        int removeOnClick;
+            
+        @JsonKey(includeIfNull: false)
+        String inBrush;
+            
+        @JsonKey(includeIfNull: false)
+        String outOfBrush;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
         
 
             // Constructor
@@ -7143,52 +9057,82 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "toolbox": toolbox,
-              "brushLink": brushLink,
-              "seriesIndex": seriesIndex,
-              "geoIndex": geoIndex,
-              "xAxisIndex": xAxisIndex,
-              "yAxisIndex": yAxisIndex,
-              "brushType": brushType,
-              "brushMode": brushMode,
-              "transformable": transformable,
-              "brushStyle": brushStyle,
-              "throttleType": throttleType,
-              "throttleDelay": throttleDelay,
-              "removeOnClick": removeOnClick,
-              "inBrush": inBrush,
-              "outOfBrush": outOfBrush,
-              "z": z,
-             };
+           factory Brush.fromJson(Map<String, dynamic> json) => _$BrushFromJson(json);
+            Map<String, dynamic> toJson() => _$BrushToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Geo {
             // Properties
-            String id;
-            String show;
-            String map;
-            String roam;
-            List<dynamic> center;
-            int aspectScale;
-            List<dynamic> boundingCoords;
-            int zoom;
-            GeoScaleLimit scaleLimit;
-            String nameMap;
-            String selectedMode;
-            GeoLabel label;
-            GeoItemStyle itemStyle;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            List<dynamic> layoutCenter;
-            int layoutSize;
-            List<dynamic> regions;
-            String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String map;
+            
+        @JsonKey(includeIfNull: false)
+        String roam;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> center;
+            
+        @JsonKey(includeIfNull: false)
+        int aspectScale;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> boundingCoords;
+            
+        @JsonKey(includeIfNull: false)
+        int zoom;
+            
+        @JsonKey(includeIfNull: false)
+        GeoScaleLimit scaleLimit;
+            
+        @JsonKey(includeIfNull: false)
+        String nameMap;
+            
+        @JsonKey(includeIfNull: false)
+        String selectedMode;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        GeoItemStyle itemStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> layoutCenter;
+            
+        @JsonKey(includeIfNull: false)
+        int layoutSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> regions;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
         
 
             // Constructor
@@ -7219,37 +9163,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "show": show,
-              "map": map,
-              "roam": roam,
-              "center": center,
-              "aspectScale": aspectScale,
-              "boundingCoords": boundingCoords,
-              "zoom": zoom,
-              "scaleLimit": scaleLimit,
-              "nameMap": nameMap,
-              "selectedMode": selectedMode,
-              "label": label,
-              "itemStyle": itemStyle,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "layoutCenter": layoutCenter,
-              "layoutSize": layoutSize,
-              "regions": regions,
-              "silent": silent,
-             };
+           factory Geo.fromJson(Map<String, dynamic> json) => _$GeoFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoScaleLimit {
             // Properties
-            int min;
-            int max;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
         
 
             // Constructor
@@ -7259,47 +9185,112 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "min": min,
-              "max": max,
-             };
+           factory GeoScaleLimit.fromJson(Map<String, dynamic> json) => _$GeoScaleLimitFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoScaleLimitToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabel {
             // Properties
-            String show;
-            String position;
-            int distance;
-            int rotate;
-            List<dynamic> offset;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            GeoLabelRich rich;
-            GeoLabelEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        int distance;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> offset;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabelEmphasis emphasis;
         
 
             // Constructor
@@ -7340,46 +9331,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "position": position,
-              "distance": distance,
-              "rotate": rotate,
-              "offset": offset,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-              "emphasis": emphasis,
-             };
+           factory GeoLabel.fromJson(Map<String, dynamic> json) => _$GeoLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabelRich {
             // Properties
-            GeoLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -7388,38 +9349,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory GeoLabelRich.fromJson(Map<String, dynamic> json) => _$GeoLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -7452,69 +9463,109 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory GeoLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$GeoLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabelEmphasis {
             // Properties
-            String show;
-            String position;
-            int distance;
-            int rotate;
-            List<dynamic> offset;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            GeoLabelEmphasisRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        int distance;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> offset;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabelEmphasisRich rich;
         
 
             // Constructor
@@ -7554,45 +9605,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "position": position,
-              "distance": distance,
-              "rotate": rotate,
-              "offset": offset,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory GeoLabelEmphasis.fromJson(Map<String, dynamic> json) => _$GeoLabelEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabelEmphasisRich {
             // Properties
-            GeoLabelEmphasisRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        GeoLabelEmphasisRichCustomStyle customStyle;
         
 
             // Constructor
@@ -7601,38 +9623,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory GeoLabelEmphasisRich.fromJson(Map<String, dynamic> json) => _$GeoLabelEmphasisRichFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelEmphasisRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoLabelEmphasisRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -7665,39 +9737,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory GeoLabelEmphasisRichCustomStyle.fromJson(Map<String, dynamic> json) => _$GeoLabelEmphasisRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoLabelEmphasisRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoItemStyle {
             // Properties
-            String areaColor;
-            GeoItemStyleEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String areaColor;
+            
+        @JsonKey(includeIfNull: false)
+        GeoItemStyleEmphasis emphasis;
         
 
             // Constructor
@@ -7707,24 +9759,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "areaColor": areaColor,
-              "emphasis": emphasis,
-             };
+           factory GeoItemStyle.fromJson(Map<String, dynamic> json) => _$GeoItemStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoItemStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class GeoItemStyleEmphasis {
             // Properties
-            String areaColor;
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String areaColor;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -7742,38 +9813,61 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "areaColor": areaColor,
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory GeoItemStyleEmphasis.fromJson(Map<String, dynamic> json) => _$GeoItemStyleEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$GeoItemStyleEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Parallel {
             // Properties
-            String id;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String width;
-            String height;
-            String layout;
-            String axisExpandable;
-            int axisExpandCenter;
-            int axisExpandCount;
-            int axisExpandWidth;
-            String axisExpandTriggerOn;
-            ParallelParallelAxisDefault parallelAxisDefault;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String width;
+            
+        @JsonKey(includeIfNull: false)
+        String height;
+            
+        @JsonKey(includeIfNull: false)
+        String layout;
+            
+        @JsonKey(includeIfNull: false)
+        String axisExpandable;
+            
+        @JsonKey(includeIfNull: false)
+        int axisExpandCenter;
+            
+        @JsonKey(includeIfNull: false)
+        int axisExpandCount;
+            
+        @JsonKey(includeIfNull: false)
+        int axisExpandWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String axisExpandTriggerOn;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefault parallelAxisDefault;
         
 
             // Constructor
@@ -7797,49 +9891,76 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "layout": layout,
-              "axisExpandable": axisExpandable,
-              "axisExpandCenter": axisExpandCenter,
-              "axisExpandCount": axisExpandCount,
-              "axisExpandWidth": axisExpandWidth,
-              "axisExpandTriggerOn": axisExpandTriggerOn,
-              "parallelAxisDefault": parallelAxisDefault,
-             };
+           factory Parallel.fromJson(Map<String, dynamic> json) => _$ParallelFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefault {
             // Properties
-            String type;
-            String name;
-            String nameLocation;
-            ParallelParallelAxisDefaultNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            ParallelParallelAxisDefaultAxisLine axisLine;
-            ParallelParallelAxisDefaultAxisTick axisTick;
-            ParallelParallelAxisDefaultAxisLabel axisLabel;
-            List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
         
 
             // Constructor
@@ -7868,59 +9989,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "data": data,
-             };
+           factory ParallelParallelAxisDefault.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            ParallelParallelAxisDefaultNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultNameTextStyleRich rich;
         
 
             // Constructor
@@ -7954,39 +10107,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory ParallelParallelAxisDefaultNameTextStyle.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultNameTextStyleRich {
             // Properties
-            ParallelParallelAxisDefaultNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -7995,38 +10125,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory ParallelParallelAxisDefaultNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -8059,42 +10239,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory ParallelParallelAxisDefaultNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            ParallelParallelAxisDefaultAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -8107,25 +10273,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory ParallelParallelAxisDefaultAxisLine.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -8141,26 +10319,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ParallelParallelAxisDefaultAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            ParallelParallelAxisDefaultAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -8174,26 +10357,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory ParallelParallelAxisDefaultAxisTick.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -8209,54 +10403,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ParallelParallelAxisDefaultAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            ParallelParallelAxisDefaultAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisLabelRich rich;
         
 
             // Constructor
@@ -8298,47 +10553,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory ParallelParallelAxisDefaultAxisLabel.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisLabelRich {
             // Properties
-            ParallelParallelAxisDefaultAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelParallelAxisDefaultAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -8347,38 +10571,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory ParallelParallelAxisDefaultAxisLabelRich.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelParallelAxisDefaultAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -8411,63 +10685,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory ParallelParallelAxisDefaultAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$ParallelParallelAxisDefaultAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelParallelAxisDefaultAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxis {
             // Properties
-            String id;
-            int dim;
-            int parallelIndex;
-            String realtime;
-            ParallelAxisAreaSelectStyle areaSelectStyle;
-            String type;
-            String name;
-            String nameLocation;
-            ParallelAxisNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            ParallelAxisAxisLine axisLine;
-            ParallelAxisAxisTick axisTick;
-            ParallelAxisAxisLabel axisLabel;
-            List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int dim;
+            
+        @JsonKey(includeIfNull: false)
+        int parallelIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String realtime;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAreaSelectStyle areaSelectStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
         
 
             // Constructor
@@ -8501,43 +10803,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "dim": dim,
-              "parallelIndex": parallelIndex,
-              "realtime": realtime,
-              "areaSelectStyle": areaSelectStyle,
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "data": data,
-             };
+           factory ParallelAxis.fromJson(Map<String, dynamic> json) => _$ParallelAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAreaSelectStyle {
             // Properties
-            int width;
-            int borderWidth;
-            String borderColor;
-            String color;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -8550,43 +10837,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "width": width,
-              "borderWidth": borderWidth,
-              "borderColor": borderColor,
-              "color": color,
-              "opacity": opacity,
-             };
+           factory ParallelAxisAreaSelectStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisAreaSelectStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAreaSelectStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            ParallelAxisNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisNameTextStyleRich rich;
         
 
             // Constructor
@@ -8620,39 +10955,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory ParallelAxisNameTextStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisNameTextStyleRich {
             // Properties
-            ParallelAxisNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -8661,38 +10973,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory ParallelAxisNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$ParallelAxisNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -8725,42 +11087,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory ParallelAxisNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            ParallelAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -8773,25 +11121,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory ParallelAxisAxisLine.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -8807,26 +11167,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ParallelAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            ParallelAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -8840,26 +11205,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory ParallelAxisAxisTick.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -8875,54 +11251,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory ParallelAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            ParallelAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -8964,47 +11401,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory ParallelAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisLabelRich {
             // Properties
-            ParallelAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        ParallelAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -9013,38 +11419,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory ParallelAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class ParallelAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -9077,72 +11533,118 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory ParallelAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$ParallelAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$ParallelAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxis {
             // Properties
-            String id;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            String width;
-            String height;
-            String orient;
-            String type;
-            String name;
-            String nameLocation;
-            SingleAxisNameTextStyle nameTextStyle;
-            int nameGap;
-            int nameRotate;
-            String inverse;
-            String boundaryGap;
-            int min;
-            int max;
-            String scale;
-            int splitNumber;
-            int minInterval;
-            int interval;
-            int logBase;
-            String silent;
-            String triggerEvent;
-            SingleAxisAxisLine axisLine;
-            SingleAxisAxisTick axisTick;
-            SingleAxisAxisLabel axisLabel;
-            SingleAxisSplitLine splitLine;
-            SingleAxisSplitArea splitArea;
-            List<dynamic> data;
-            SingleAxisAxisPointer axisPointer;
-            String tooltip;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        String width;
+            
+        @JsonKey(includeIfNull: false)
+        String height;
+            
+        @JsonKey(includeIfNull: false)
+        String orient;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String name;
+            
+        @JsonKey(includeIfNull: false)
+        String nameLocation;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisNameTextStyle nameTextStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int nameGap;
+            
+        @JsonKey(includeIfNull: false)
+        int nameRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String boundaryGap;
+            
+        @JsonKey(includeIfNull: false)
+        int min;
+            
+        @JsonKey(includeIfNull: false)
+        int max;
+            
+        @JsonKey(includeIfNull: false)
+        String scale;
+            
+        @JsonKey(includeIfNull: false)
+        int splitNumber;
+            
+        @JsonKey(includeIfNull: false)
+        int minInterval;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        int logBase;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerEvent;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisLine axisLine;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisTick axisTick;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisLabel axisLabel;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisSplitArea splitArea;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisPointer axisPointer;
+            
+        @JsonKey(includeIfNull: false)
+        String tooltip;
         
 
             // Constructor
@@ -9185,73 +11687,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "orient": orient,
-              "type": type,
-              "name": name,
-              "nameLocation": nameLocation,
-              "nameTextStyle": nameTextStyle,
-              "nameGap": nameGap,
-              "nameRotate": nameRotate,
-              "inverse": inverse,
-              "boundaryGap": boundaryGap,
-              "min": min,
-              "max": max,
-              "scale": scale,
-              "splitNumber": splitNumber,
-              "minInterval": minInterval,
-              "interval": interval,
-              "logBase": logBase,
-              "silent": silent,
-              "triggerEvent": triggerEvent,
-              "axisLine": axisLine,
-              "axisTick": axisTick,
-              "axisLabel": axisLabel,
-              "splitLine": splitLine,
-              "splitArea": splitArea,
-              "data": data,
-              "axisPointer": axisPointer,
-              "tooltip": tooltip,
-             };
+           factory SingleAxis.fromJson(Map<String, dynamic> json) => _$SingleAxisFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisNameTextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            SingleAxisNameTextStyleRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisNameTextStyleRich rich;
         
 
             // Constructor
@@ -9285,39 +11805,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory SingleAxisNameTextStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisNameTextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisNameTextStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisNameTextStyleRich {
             // Properties
-            SingleAxisNameTextStyleRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisNameTextStyleRichCustomStyle customStyle;
         
 
             // Constructor
@@ -9326,38 +11823,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory SingleAxisNameTextStyleRich.fromJson(Map<String, dynamic> json) => _$SingleAxisNameTextStyleRichFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisNameTextStyleRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisNameTextStyleRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -9390,42 +11937,28 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory SingleAxisNameTextStyleRichCustomStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisNameTextStyleRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisNameTextStyleRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisLine {
             // Properties
-            String show;
-            String symbol;
-            List<dynamic> symbolSize;
-            List<dynamic> symbolOffset;
-            SingleAxisAxisLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisLineLineStyle lineStyle;
         
 
             // Constructor
@@ -9438,25 +11971,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-             };
+           factory SingleAxisAxisLine.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisLineFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -9472,26 +12017,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisAxisLineLineStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisTick {
             // Properties
-            String show;
-            String alignWithLabel;
-            int interval;
-            String inside;
-            int length;
-            SingleAxisAxisTickLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String alignWithLabel;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int length;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisTickLineStyle lineStyle;
         
 
             // Constructor
@@ -9505,26 +12055,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "alignWithLabel": alignWithLabel,
-              "interval": interval,
-              "inside": inside,
-              "length": length,
-              "lineStyle": lineStyle,
-             };
+           factory SingleAxisAxisTick.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisTickFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisTickToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisTickLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -9540,54 +12101,115 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisAxisTickLineStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisTickLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisTickLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisLabel {
             // Properties
-            String show;
-            int interval;
-            String inside;
-            int rotate;
-            int margin;
-            String formatter;
-            String showMinLabel;
-            String showMaxLabel;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            SingleAxisAxisLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String inside;
+            
+        @JsonKey(includeIfNull: false)
+        int rotate;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String showMinLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String showMaxLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisLabelRich rich;
         
 
             // Constructor
@@ -9629,47 +12251,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "inside": inside,
-              "rotate": rotate,
-              "margin": margin,
-              "formatter": formatter,
-              "showMinLabel": showMinLabel,
-              "showMaxLabel": showMaxLabel,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory SingleAxisAxisLabel.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisLabelRich {
             // Properties
-            SingleAxisAxisLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -9678,38 +12269,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory SingleAxisAxisLabelRich.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -9742,40 +12383,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory SingleAxisAxisLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisSplitLine {
             // Properties
-            String show;
-            int interval;
-            SingleAxisSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -9786,23 +12409,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "lineStyle": lineStyle,
-             };
+           factory SingleAxisSplitLine.fromJson(Map<String, dynamic> json) => _$SingleAxisSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisSplitLineLineStyle {
             // Properties
-            List<dynamic> color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -9818,23 +12455,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisSplitArea {
             // Properties
-            int interval;
-            String show;
-            SingleAxisSplitAreaAreaStyle areaStyle;
+            
+        @JsonKey(includeIfNull: false)
+        int interval;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisSplitAreaAreaStyle areaStyle;
         
 
             // Constructor
@@ -9845,21 +12481,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "interval": interval,
-              "show": show,
-              "areaStyle": areaStyle,
-             };
+           factory SingleAxisSplitArea.fromJson(Map<String, dynamic> json) => _$SingleAxisSplitAreaFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisSplitAreaToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisSplitAreaAreaStyle {
             // Properties
-            List<dynamic> color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -9873,29 +12519,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisSplitAreaAreaStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisSplitAreaAreaStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisSplitAreaAreaStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisPointer {
             // Properties
-            String show;
-            String type;
-            String snap;
-            int z;
-            SingleAxisAxisPointerLabel label;
-            SingleAxisAxisPointerLineStyle lineStyle;
-            SingleAxisAxisPointerShadowStyle shadowStyle;
-            String triggerTooltip;
-            int value;
-            String status;
-            SingleAxisAxisPointerHandle handle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String snap;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisPointerLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisPointerLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisPointerShadowStyle shadowStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String triggerTooltip;
+            
+        @JsonKey(includeIfNull: false)
+        int value;
+            
+        @JsonKey(includeIfNull: false)
+        String status;
+            
+        @JsonKey(includeIfNull: false)
+        SingleAxisAxisPointerHandle handle;
         
 
             // Constructor
@@ -9914,49 +12577,91 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "snap": snap,
-              "z": z,
-              "label": label,
-              "lineStyle": lineStyle,
-              "shadowStyle": shadowStyle,
-              "triggerTooltip": triggerTooltip,
-              "value": value,
-              "status": status,
-              "handle": handle,
-             };
+           factory SingleAxisAxisPointer.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisPointerFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisPointerToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisPointerLabel {
             // Properties
-            String show;
-            int precision;
-            String formatter;
-            String margin;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            String padding;
-            String backgroundColor;
-            String borderColor;
-            String borderWidth;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int precision;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String padding;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -9990,46 +12695,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "precision": precision,
-              "formatter": formatter,
-              "margin": margin,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "padding": padding,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory SingleAxisAxisPointerLabel.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisPointerLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisPointerLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisPointerLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -10045,26 +12741,31 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisAxisPointerLineStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisPointerLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisPointerLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisPointerShadowStyle {
             // Properties
-            String color;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -10078,28 +12779,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory SingleAxisAxisPointerShadowStyle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisPointerShadowStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisPointerShadowStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class SingleAxisAxisPointerHandle {
             // Properties
-            String show;
-            String icon;
-            int size;
-            int margin;
-            String color;
-            int throttle;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String icon;
+            
+        @JsonKey(includeIfNull: false)
+        int size;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int throttle;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
         
 
             // Constructor
@@ -10117,52 +12833,103 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "icon": icon,
-              "size": size,
-              "margin": margin,
-              "color": color,
-              "throttle": throttle,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-             };
+           factory SingleAxisAxisPointerHandle.fromJson(Map<String, dynamic> json) => _$SingleAxisAxisPointerHandleFromJson(json);
+            Map<String, dynamic> toJson() => _$SingleAxisAxisPointerHandleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Timeline {
             // Properties
-            String show;
-            String type;
-            String axisType;
-            int currentIndex;
-            String autoPlay;
-            String rewind;
-            String loop;
-            int playInterval;
-            String realtime;
-            String controlPosition;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            int padding;
-            String orient;
-            String inverse;
-            String symbol;
-            int symbolSize;
-            int symbolRotate;
-            String symbolKeepAspect;
-            List<dynamic> symbolOffset;
-            TimelineLineStyle lineStyle;
-            TimelineLabel label;
-            TimelineItemStyle itemStyle;
-            TimelineCheckpointStyle checkpointStyle;
-            TimelineControlStyle controlStyle;
-            List<dynamic> data;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        String axisType;
+            
+        @JsonKey(includeIfNull: false)
+        int currentIndex;
+            
+        @JsonKey(includeIfNull: false)
+        String autoPlay;
+            
+        @JsonKey(includeIfNull: false)
+        String rewind;
+            
+        @JsonKey(includeIfNull: false)
+        String loop;
+            
+        @JsonKey(includeIfNull: false)
+        int playInterval;
+            
+        @JsonKey(includeIfNull: false)
+        String realtime;
+            
+        @JsonKey(includeIfNull: false)
+        String controlPosition;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String orient;
+            
+        @JsonKey(includeIfNull: false)
+        String inverse;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        int symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        int symbolRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String symbolKeepAspect;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabel label;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineItemStyle itemStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineCheckpointStyle checkpointStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineControlStyle controlStyle;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> data;
         
 
             // Constructor
@@ -10200,51 +12967,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "type": type,
-              "axisType": axisType,
-              "currentIndex": currentIndex,
-              "autoPlay": autoPlay,
-              "rewind": rewind,
-              "loop": loop,
-              "playInterval": playInterval,
-              "realtime": realtime,
-              "controlPosition": controlPosition,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "padding": padding,
-              "orient": orient,
-              "inverse": inverse,
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolRotate": symbolRotate,
-              "symbolKeepAspect": symbolKeepAspect,
-              "symbolOffset": symbolOffset,
-              "lineStyle": lineStyle,
-              "label": label,
-              "itemStyle": itemStyle,
-              "checkpointStyle": checkpointStyle,
-              "controlStyle": controlStyle,
-              "data": data,
-             };
+           factory Timeline.fromJson(Map<String, dynamic> json) => _$TimelineFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLineStyle {
             // Properties
-            String show;
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -10261,53 +13017,109 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory TimelineLineStyle.fromJson(Map<String, dynamic> json) => _$TimelineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabel {
             // Properties
-            String position;
-            String show;
-            String interval;
-            String rotate;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            TimelineLabelRich rich;
-            TimelineLabelEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String interval;
+            
+        @JsonKey(includeIfNull: false)
+        String rotate;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabelEmphasis emphasis;
         
 
             // Constructor
@@ -10347,45 +13159,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "position": position,
-              "show": show,
-              "interval": interval,
-              "rotate": rotate,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-              "emphasis": emphasis,
-             };
+           factory TimelineLabel.fromJson(Map<String, dynamic> json) => _$TimelineLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabelRich {
             // Properties
-            TimelineLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -10394,38 +13177,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory TimelineLabelRich.fromJson(Map<String, dynamic> json) => _$TimelineLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -10458,67 +13291,103 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory TimelineLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$TimelineLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabelEmphasis {
             // Properties
-            String show;
-            String interval;
-            String rotate;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            TimelineLabelEmphasisRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String interval;
+            
+        @JsonKey(includeIfNull: false)
+        String rotate;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabelEmphasisRich rich;
         
 
             // Constructor
@@ -10556,43 +13425,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "interval": interval,
-              "rotate": rotate,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory TimelineLabelEmphasis.fromJson(Map<String, dynamic> json) => _$TimelineLabelEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabelEmphasisRich {
             // Properties
-            TimelineLabelEmphasisRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineLabelEmphasisRichCustomStyle customStyle;
         
 
             // Constructor
@@ -10601,38 +13443,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory TimelineLabelEmphasisRich.fromJson(Map<String, dynamic> json) => _$TimelineLabelEmphasisRichFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelEmphasisRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineLabelEmphasisRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -10665,47 +13557,43 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory TimelineLabelEmphasisRichCustomStyle.fromJson(Map<String, dynamic> json) => _$TimelineLabelEmphasisRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineLabelEmphasisRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineItemStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
-            TimelineItemStyleEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineItemStyleEmphasis emphasis;
         
 
             // Constructor
@@ -10723,31 +13611,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-              "emphasis": emphasis,
-             };
+           factory TimelineItemStyle.fromJson(Map<String, dynamic> json) => _$TimelineItemStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineItemStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineItemStyleEmphasis {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -10764,32 +13661,46 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory TimelineItemStyleEmphasis.fromJson(Map<String, dynamic> json) => _$TimelineItemStyleEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineItemStyleEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineCheckpointStyle {
             // Properties
-            String symbol;
-            int symbolSize;
-            int symbolRotate;
-            String symbolKeepAspect;
-            List<dynamic> symbolOffset;
-            String color;
-            int borderWidth;
-            String borderColor;
-            String animation;
-            int animationDuration;
-            String animationEasing;
+            
+        @JsonKey(includeIfNull: false)
+        String symbol;
+            
+        @JsonKey(includeIfNull: false)
+        int symbolSize;
+            
+        @JsonKey(includeIfNull: false)
+        int symbolRotate;
+            
+        @JsonKey(includeIfNull: false)
+        String symbolKeepAspect;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> symbolOffset;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        String animation;
+            
+        @JsonKey(includeIfNull: false)
+        int animationDuration;
+            
+        @JsonKey(includeIfNull: false)
+        String animationEasing;
         
 
             // Constructor
@@ -10808,38 +13719,58 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "symbol": symbol,
-              "symbolSize": symbolSize,
-              "symbolRotate": symbolRotate,
-              "symbolKeepAspect": symbolKeepAspect,
-              "symbolOffset": symbolOffset,
-              "color": color,
-              "borderWidth": borderWidth,
-              "borderColor": borderColor,
-              "animation": animation,
-              "animationDuration": animationDuration,
-              "animationEasing": animationEasing,
-             };
+           factory TimelineCheckpointStyle.fromJson(Map<String, dynamic> json) => _$TimelineCheckpointStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineCheckpointStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineControlStyle {
             // Properties
-            String show;
-            String showPlayBtn;
-            String showPrevBtn;
-            String showNextBtn;
-            int itemSize;
-            int itemGap;
-            String position;
-            String playIcon;
-            String stopIcon;
-            String prevIcon;
-            String nextIcon;
-            String color;
-            String borderColor;
-            int borderWidth;
-            TimelineControlStyleEmphasis emphasis;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String showPlayBtn;
+            
+        @JsonKey(includeIfNull: false)
+        String showPrevBtn;
+            
+        @JsonKey(includeIfNull: false)
+        String showNextBtn;
+            
+        @JsonKey(includeIfNull: false)
+        int itemSize;
+            
+        @JsonKey(includeIfNull: false)
+        int itemGap;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String playIcon;
+            
+        @JsonKey(includeIfNull: false)
+        String stopIcon;
+            
+        @JsonKey(includeIfNull: false)
+        String prevIcon;
+            
+        @JsonKey(includeIfNull: false)
+        String nextIcon;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        TimelineControlStyleEmphasis emphasis;
         
 
             // Constructor
@@ -10862,30 +13793,22 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "showPlayBtn": showPlayBtn,
-              "showPrevBtn": showPrevBtn,
-              "showNextBtn": showNextBtn,
-              "itemSize": itemSize,
-              "itemGap": itemGap,
-              "position": position,
-              "playIcon": playIcon,
-              "stopIcon": stopIcon,
-              "prevIcon": prevIcon,
-              "nextIcon": nextIcon,
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "emphasis": emphasis,
-             };
+           factory TimelineControlStyle.fromJson(Map<String, dynamic> json) => _$TimelineControlStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineControlStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TimelineControlStyleEmphasis {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
         
 
             // Constructor
@@ -10896,33 +13819,67 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-             };
+           factory TimelineControlStyleEmphasis.fromJson(Map<String, dynamic> json) => _$TimelineControlStyleEmphasisFromJson(json);
+            Map<String, dynamic> toJson() => _$TimelineControlStyleEmphasisToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Calendar {
             // Properties
-            String id;
-            int zlevel;
-            int z;
-            String left;
-            String top;
-            String right;
-            String bottom;
-            int width;
-            int height;
-            int range;
-            int cellSize;
-            String orient;
-            CalendarSplitLine splitLine;
-            CalendarItemStyle itemStyle;
-            CalendarDayLabel dayLabel;
-            CalendarMonthLabel monthLabel;
-            CalendarYearLabel yearLabel;
-            String silent;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        int zlevel;
+            
+        @JsonKey(includeIfNull: false)
+        int z;
+            
+        @JsonKey(includeIfNull: false)
+        String left;
+            
+        @JsonKey(includeIfNull: false)
+        String top;
+            
+        @JsonKey(includeIfNull: false)
+        String right;
+            
+        @JsonKey(includeIfNull: false)
+        String bottom;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        int range;
+            
+        @JsonKey(includeIfNull: false)
+        int cellSize;
+            
+        @JsonKey(includeIfNull: false)
+        String orient;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarSplitLine splitLine;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarItemStyle itemStyle;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarDayLabel dayLabel;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarMonthLabel monthLabel;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarYearLabel yearLabel;
+            
+        @JsonKey(includeIfNull: false)
+        String silent;
         
 
             // Constructor
@@ -10948,32 +13905,19 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "zlevel": zlevel,
-              "z": z,
-              "left": left,
-              "top": top,
-              "right": right,
-              "bottom": bottom,
-              "width": width,
-              "height": height,
-              "range": range,
-              "cellSize": cellSize,
-              "orient": orient,
-              "splitLine": splitLine,
-              "itemStyle": itemStyle,
-              "dayLabel": dayLabel,
-              "monthLabel": monthLabel,
-              "yearLabel": yearLabel,
-              "silent": silent,
-             };
+           factory Calendar.fromJson(Map<String, dynamic> json) => _$CalendarFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarSplitLine {
             // Properties
-            String show;
-            CalendarSplitLineLineStyle lineStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarSplitLineLineStyle lineStyle;
         
 
             // Constructor
@@ -10983,22 +13927,37 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "lineStyle": lineStyle,
-             };
+           factory CalendarSplitLine.fromJson(Map<String, dynamic> json) => _$CalendarSplitLineFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarSplitLineToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarSplitLineLineStyle {
             // Properties
-            String color;
-            int width;
-            String type;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        String type;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -11014,29 +13973,40 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "width": width,
-              "type": type,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory CalendarSplitLineLineStyle.fromJson(Map<String, dynamic> json) => _$CalendarSplitLineLineStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarSplitLineLineStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarItemStyle {
             // Properties
-            String color;
-            String borderColor;
-            int borderWidth;
-            String borderType;
-            int shadowBlur;
-            String shadowColor;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int opacity;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String borderType;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int opacity;
         
 
             // Constructor
@@ -11053,52 +14023,106 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderType": borderType,
-              "shadowBlur": shadowBlur,
-              "shadowColor": shadowColor,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "opacity": opacity,
-             };
+           factory CalendarItemStyle.fromJson(Map<String, dynamic> json) => _$CalendarItemStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarItemStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarDayLabel {
             // Properties
-            String show;
-            int firstDay;
-            int margin;
-            String position;
-            String nameMap;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            CalendarDayLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int firstDay;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String nameMap;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarDayLabelRich rich;
         
 
             // Constructor
@@ -11137,44 +14161,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "firstDay": firstDay,
-              "margin": margin,
-              "position": position,
-              "nameMap": nameMap,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory CalendarDayLabel.fromJson(Map<String, dynamic> json) => _$CalendarDayLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarDayLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarDayLabelRich {
             // Properties
-            CalendarDayLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarDayLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -11183,38 +14179,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory CalendarDayLabelRich.fromJson(Map<String, dynamic> json) => _$CalendarDayLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarDayLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarDayLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -11247,68 +14293,106 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory CalendarDayLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$CalendarDayLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarDayLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarMonthLabel {
             // Properties
-            String show;
-            String align;
-            int margin;
-            String position;
-            String nameMap;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            CalendarMonthLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String nameMap;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarMonthLabelRich rich;
         
 
             // Constructor
@@ -11347,44 +14431,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "align": align,
-              "margin": margin,
-              "position": position,
-              "nameMap": nameMap,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory CalendarMonthLabel.fromJson(Map<String, dynamic> json) => _$CalendarMonthLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarMonthLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarMonthLabelRich {
             // Properties
-            CalendarMonthLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarMonthLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -11393,38 +14449,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory CalendarMonthLabelRich.fromJson(Map<String, dynamic> json) => _$CalendarMonthLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarMonthLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarMonthLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -11457,67 +14563,103 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory CalendarMonthLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$CalendarMonthLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarMonthLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarYearLabel {
             // Properties
-            String show;
-            int margin;
-            String position;
-            String formatter;
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
-            CalendarYearLabelRich rich;
+            
+        @JsonKey(includeIfNull: false)
+        String show;
+            
+        @JsonKey(includeIfNull: false)
+        int margin;
+            
+        @JsonKey(includeIfNull: false)
+        String position;
+            
+        @JsonKey(includeIfNull: false)
+        String formatter;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarYearLabelRich rich;
         
 
             // Constructor
@@ -11555,43 +14697,16 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "show": show,
-              "margin": margin,
-              "position": position,
-              "formatter": formatter,
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-              "rich": rich,
-             };
+           factory CalendarYearLabel.fromJson(Map<String, dynamic> json) => _$CalendarYearLabelFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarYearLabelToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarYearLabelRich {
             // Properties
-            CalendarYearLabelRichCustomStyle customStyle;
+            
+        @JsonKey(includeIfNull: false)
+        CalendarYearLabelRichCustomStyle customStyle;
         
 
             // Constructor
@@ -11600,38 +14715,88 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "customStyle": customStyle,
-             };
+           factory CalendarYearLabelRich.fromJson(Map<String, dynamic> json) => _$CalendarYearLabelRichFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarYearLabelRichToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class CalendarYearLabelRichCustomStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            String align;
-            String verticalAlign;
-            int lineHeight;
-            String backgroundColor;
-            String borderColor;
-            int borderWidth;
-            int borderRadius;
-            int padding;
-            String shadowColor;
-            int shadowBlur;
-            int shadowOffsetX;
-            int shadowOffsetY;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        String align;
+            
+        @JsonKey(includeIfNull: false)
+        String verticalAlign;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        String backgroundColor;
+            
+        @JsonKey(includeIfNull: false)
+        String borderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int borderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        int borderRadius;
+            
+        @JsonKey(includeIfNull: false)
+        int padding;
+            
+        @JsonKey(includeIfNull: false)
+        String shadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int shadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -11664,41 +14829,25 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "align": align,
-              "verticalAlign": verticalAlign,
-              "lineHeight": lineHeight,
-              "backgroundColor": backgroundColor,
-              "borderColor": borderColor,
-              "borderWidth": borderWidth,
-              "borderRadius": borderRadius,
-              "padding": padding,
-              "shadowColor": shadowColor,
-              "shadowBlur": shadowBlur,
-              "shadowOffsetX": shadowOffsetX,
-              "shadowOffsetY": shadowOffsetY,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory CalendarYearLabelRichCustomStyle.fromJson(Map<String, dynamic> json) => _$CalendarYearLabelRichCustomStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$CalendarYearLabelRichCustomStyleToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class Dataset {
             // Properties
-            String id;
-            List<dynamic> source;
-            List<dynamic> dimensions;
-            String sourceHeader;
+            
+        @JsonKey(includeIfNull: false)
+        String id;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> source;
+            
+        @JsonKey(includeIfNull: false)
+        List<dynamic> dimensions;
+            
+        @JsonKey(includeIfNull: false)
+        String sourceHeader;
         
 
             // Constructor
@@ -11710,30 +14859,55 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "id": id,
-              "source": source,
-              "dimensions": dimensions,
-              "sourceHeader": sourceHeader,
-             };
+           factory Dataset.fromJson(Map<String, dynamic> json) => _$DatasetFromJson(json);
+            Map<String, dynamic> toJson() => _$DatasetToJson(this);
         }
       
+        @JsonSerializable(nullable: true)
         class TextStyle {
             // Properties
-            String color;
-            String fontStyle;
-            String fontWeight;
-            String fontFamily;
-            int fontSize;
-            int lineHeight;
-            int width;
-            int height;
-            String textBorderColor;
-            int textBorderWidth;
-            String textShadowColor;
-            int textShadowBlur;
-            int textShadowOffsetX;
-            int textShadowOffsetY;
+            
+        @JsonKey(includeIfNull: false)
+        String color;
+            
+        @JsonKey(includeIfNull: false)
+        String fontStyle;
+            
+        @JsonKey(includeIfNull: false)
+        String fontWeight;
+            
+        @JsonKey(includeIfNull: false)
+        String fontFamily;
+            
+        @JsonKey(includeIfNull: false)
+        int fontSize;
+            
+        @JsonKey(includeIfNull: false)
+        int lineHeight;
+            
+        @JsonKey(includeIfNull: false)
+        int width;
+            
+        @JsonKey(includeIfNull: false)
+        int height;
+            
+        @JsonKey(includeIfNull: false)
+        String textBorderColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textBorderWidth;
+            
+        @JsonKey(includeIfNull: false)
+        String textShadowColor;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowBlur;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetX;
+            
+        @JsonKey(includeIfNull: false)
+        int textShadowOffsetY;
         
 
             // Constructor
@@ -11755,21 +14929,7 @@
             });
 
             // JSON
-            Map<String, dynamic> toJson() => {
-              "color": color,
-              "fontStyle": fontStyle,
-              "fontWeight": fontWeight,
-              "fontFamily": fontFamily,
-              "fontSize": fontSize,
-              "lineHeight": lineHeight,
-              "width": width,
-              "height": height,
-              "textBorderColor": textBorderColor,
-              "textBorderWidth": textBorderWidth,
-              "textShadowColor": textShadowColor,
-              "textShadowBlur": textShadowBlur,
-              "textShadowOffsetX": textShadowOffsetX,
-              "textShadowOffsetY": textShadowOffsetY,
-             };
+           factory TextStyle.fromJson(Map<String, dynamic> json) => _$TextStyleFromJson(json);
+            Map<String, dynamic> toJson() => _$TextStyleToJson(this);
         }
       

@@ -58,6 +58,7 @@ module.exports = class OptionNode {
   generateClassDefinition(generator) {
     if (this.isObject() || this._key === "EChartsOption") {
       const classDefinition = `
+        @JsonSerializable(nullable: true)
         class ${this.name} {
             // Properties
         ${this.propertyDefinitions}
@@ -80,12 +81,14 @@ module.exports = class OptionNode {
 
     this._nodes.forEach(node => {
       if (!node.isObject()) {
-        propertyDefinition += `    ${this.getTypeName(node._obj.type[0])} ${
-          node._key
-        };
+        propertyDefinition += `    
+        @JsonKey(includeIfNull: false)
+        ${this.getTypeName(node._obj.type[0])} ${node._key};
         `;
       } else {
-        propertyDefinition += `    ${node.name} ${node._key};
+        propertyDefinition += `    
+        @JsonKey(includeIfNull: false)
+        ${node.name} ${node._key};
         `;
       }
     });
@@ -117,8 +120,10 @@ module.exports = class OptionNode {
     `)
     );
 
-    return `    Map<String, dynamic> toJson() => {
-    ${propertyList}         };`;
+    return `   factory ${this.name}.fromJson(Map<String, dynamic> json) => _$${
+      this.name
+    }FromJson(json);
+            Map<String, dynamic> toJson() => _$${this.name}ToJson(this);`;
   }
 
   getTypeName(type) {

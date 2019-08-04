@@ -31,7 +31,9 @@ removeProp(option, "description");
 const optionNode = new OptionNode("EChartsOption", option.option, undefined);
 
 let generator = {
-  code: ""
+  code: `import 'package:json_annotation/json_annotation.dart';
+part 'EChartsOption.g.dart';
+  `
 };
 
 optionNode.generateClassDefinition(generator);
